@@ -1,0 +1,9 @@
+{
+  "mongoURI": "mongodb+srv://hatimfayez85:8BLS07787B4EJjSP@leads.vrqn5pn.mongodb.net/",
+  "jwtSecret": "mysecrettoken",
+  "Mail_API_Key": "",
+  "STRIPE_SECRET_KEY": "",
+  "STRIPE_PUBLISHABLE_KEY": "",
+  "WEBHOOK_SECRET": "",
+  "DEVELOPMENT_WEBHOOK_SECRET": ""
+}
