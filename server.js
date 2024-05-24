@@ -9,10 +9,6 @@ connectDB();
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.status(200).send("API Running");
-});
-
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/customers", require("./routes/api/customers"));
 
