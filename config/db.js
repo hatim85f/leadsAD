@@ -6,7 +6,7 @@ const db =
     ? process.env.mongoURI
     : config.get("mongoURI");
 
-console.log(process.env.NODE_ENV);
+console.log(db);
 
 const connectDB = async () => {
   console.log("Connecting to MongoDB...");

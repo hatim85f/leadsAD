@@ -9,13 +9,13 @@ connectDB();
 app.use(express.json());
 app.use(cors());
 
-app.use("/api/users", require("./routes/api/users"));
-app.use("/api/customers", require("./routes/api/customers"));
-app.use("/api/test", require("./routes/api/test"));
-
 app.get("/", (req, res) => {
   res.status(200).send("API Running");
 });
+
+app.use("/api/users", require("./routes/api/users"));
+app.use("/api/customers", require("./routes/api/customers"));
+app.use("/api/test", require("./routes/api/test"));
 
 const PORT = process.env.PORT || 5000;
 
