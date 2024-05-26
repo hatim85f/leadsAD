@@ -67,7 +67,7 @@ const CustomerSchema = new Schema(
       type: Date,
     },
     appointmentTime: {
-      type: Date,
+      type: String,
     },
     actionRequired: {
       type: String,
