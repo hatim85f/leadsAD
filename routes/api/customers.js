@@ -33,6 +33,7 @@ router.post("/", async (req, res) => {
     appointmentCreated,
     appointmentDate,
     appointmentTime,
+    actionRequired,
     createdBy,
   } = req.body;
 
@@ -62,6 +63,7 @@ router.post("/", async (req, res) => {
       appointmentTime: appointmentTime
         ? moment(appointmentTime, "HH:mm").toISOString()
         : null,
+      actionRequired,
       createdBy,
     });
 
