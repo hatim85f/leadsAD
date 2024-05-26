@@ -79,4 +79,16 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.put("/appointment/:id", async (req, res) => {
+  const { appointmentCreate } = req.body;
+
+  try {
+  } catch (error) {
+    return res.status(500).send({
+      error: "Error !",
+      message: error.message,
+    });
+  }
+});
+
 module.exports = router;

@@ -69,6 +69,10 @@ const CustomerSchema = new Schema(
     appointmentTime: {
       type: Date,
     },
+    actionRequired: {
+      type: String,
+      enum: ["call", "email", "sms", "whatsapp", "meeting", "followUp"],
+    },
 
     createdBy: {
       type: Schema.Types.ObjectId,
